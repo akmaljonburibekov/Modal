@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+  <!--FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- STYLE -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  
+  <div class="wrapper">
+    <button class="btn show-btn" id="show-btn">
+      Sow modal
+    </button>
+    <!-- MODAL -->
+    <div class="modal hidden" id="modal">
+
+      <!-- MODAL HEADER START-->
+      <div class="modal-header">
+        <h3>I LOVE BMW</h3>
+        <button class="btn close-btn" id="close-btn">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <!-- MODAL HEADER END-->
+
+      <!-- MODAL BODY START-->
+      <div class="modal-body">
+        <h2 class="modal-title">Modal Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione animi temporibus maxime vero quidem accusamus facere sequi possimus eum corporis? Aperiam a eligendi laudantium nostrum, impedit voluptatem alias numquam eum.m</p>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL BODY END-->
+
+  <!-- OVERLAY START -->
+  <div class="overlay hidden" id="overlay"></div>
+  <!-- OVERLAY END -->
+
+  <!-- JAVASCRIPT -->
+  <script src="./app.js"></script>
+</body>
+</html>
